@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Redmine">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1F2933"/>
+      <stop offset="100%" stop-color="#0B1320"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E4572E"/>
+      <stop offset="100%" stop-color="#B33A1B"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <path d="M34 86V42h18.5c11.2 0 18.4 6.4 18.4 16.2 0 6.6-3.4 11.7-9 14.2L76 86H58.8L47.6 71.2H46V86H34zm12-25.2h5.8c5.1 0 8-2.5 8-6.7s-2.9-6.6-8-6.6H46v13.3z" fill="url(#accent)"/>
+  <circle cx="92" cy="40" r="10" fill="#F4A261" opacity="0.95"/>
+  <path d="M84 88c8.8-10 18-14.5 28-14.5v12c-7.2 0-13.8 3.2-20 9.5L84 88z" fill="#94A3B8" opacity="0.9"/>
+</svg>
