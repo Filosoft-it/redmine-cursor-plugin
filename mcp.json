@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "redmine": {
+      "command": "node",
+      "args": ["./scripts/run-redmine-mcp.mjs"],
+      "env": {
+        "REDMINE_URL": "${REDMINE_URL}",
+        "REDMINE_API_KEY": "${REDMINE_API_KEY}",
+        "REDMINE_READ_ONLY": "${REDMINE_READ_ONLY}"
+      }
+    }
+  }
+}

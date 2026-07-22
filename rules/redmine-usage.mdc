@@ -1,0 +1,15 @@
+---
+description: Safe, filter-first Redmine workflows when using the Redmine MCP tools.
+alwaysApply: true
+---
+
+# Redmine usage
+
+- Never invent Redmine URLs or API keys. Use the configured plugin variables.
+- Prefer read tools. Create/update issue tools exist only when `REDMINE_READ_ONLY=false`.
+- Discover ids before filtering: projects → trackers/statuses/priorities/users/versions/categories → `redmine_list_issues`.
+- Default issue listing is open issues only. Use `status_id=*` or `closed` when needed.
+- Use `assigned_to_id=me` / `author_id=me` instead of guessing user ids.
+- Keep pages small (`limit` ≤ 25–50) and paginate with `offset` for large result sets.
+- Summarize tickets for the user: id, subject, project, status, assignee, priority, updated_on, and a deep link when the base URL is known.
+- Do not print the API access key.

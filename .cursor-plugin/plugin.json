@@ -1,0 +1,54 @@
+{
+  "name": "redmine",
+  "displayName": "Redmine",
+  "version": "1.0.0",
+  "description": "Connect Cursor to Redmine with your instance URL and API access key. Fetch projects and tickets, and filter issues by project, status, assignee, tracker, priority, version, saved queries, custom fields, and more.",
+  "author": {
+    "name": "Filosoft",
+    "email": "leonardo.bonadimani@filosoft.it"
+  },
+  "homepage": "https://github.com/Filosoft-it/redmine-cursor-plugin",
+  "repository": "https://github.com/Filosoft-it/redmine-cursor-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.svg",
+  "keywords": [
+    "redmine",
+    "issues",
+    "tickets",
+    "projects",
+    "project-management",
+    "mcp",
+    "filters",
+    "rest-api"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "redmine",
+    "mcp",
+    "issues",
+    "productivity"
+  ],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "REDMINE_URL": {
+        "type": "string",
+        "title": "Redmine URL",
+        "description": "Base URL of your Redmine instance, e.g. https://redmine.example.com (no trailing slash required)"
+      },
+      "REDMINE_API_KEY": {
+        "type": "string",
+        "title": "API access key",
+        "description": "API access key from Redmine → My account → API access key. REST API must be enabled by an administrator."
+      },
+      "REDMINE_READ_ONLY": {
+        "type": "string",
+        "title": "Read-only mode",
+        "description": "When true (default), only read tools are enabled. Set to false to allow creating and updating issues.",
+        "default": "true",
+        "enum": ["true", "false"]
+      }
+    },
+    "required": ["REDMINE_URL", "REDMINE_API_KEY"]
+  }
+}
