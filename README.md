@@ -1,0 +1,1 @@
+# redmine-cursor-plugin
